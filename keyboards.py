@@ -1,4 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types.web_app_info import WebAppInfo
 
 # Default keyboards
 
@@ -7,6 +8,9 @@ menu_keyboard = ReplyKeyboardMarkup(
         [
             KeyboardButton('🌏 Holidays for the year'),
             KeyboardButton('📆 Weekend check')
+        ],
+        [
+            KeyboardButton('Open te web app', web_app=WebAppInfo(url='https://www.youtube.com/watch?v=y65BZbNB0YA'))
         ]
     ],
     resize_keyboard=True,

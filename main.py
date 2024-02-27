@@ -7,7 +7,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from keyboards import menu_keyboard, country_keyboard, year_eror
 
-API_TOKEN = 'YOUR KRY'
+API_TOKEN = '7157606774:AAGa83bmKEtwEBgBaFeSkArL60YwnoIz2m4'
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -17,7 +17,7 @@ bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
-api_key = 'YOUR KEY'
+api_key = 'tdmF62S0QgG80BPJmbvglUtVSErov19c'
 
 @dp.message_handler(commands='start')
 async def start(message: types.Message):
